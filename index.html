@@ -4,9 +4,105 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-
 <body>
+	<nav>
+	  	<ul class="nav">
+	  		<li class="l1">
+	  			<a href="#">View Music </a>
+	  		</li>
+	  		<li class="l2">
+	  			<a href="#"> Add Music </a>
+	  		</li>
+	  		<li class="l3">
+	  			<a href="#"> profile </a>
+	  		</li>
+	  	</ul>
+  	</nav>
+  	<form id="form1">
+  		<label for = "Song length" > Song length: </label><br>
+  		<input type="range" id ="Song length" name="Song length"><br>
+
+  		<label for ="artistOptions"> Artist: </label><br>
+  		<select name="artist" id ="artistOptions">
+  			<option disabled selected value> option </option>
+  			<option value = "Drake"> Drake </option>
+  			<option value = "Calvin Harris"> Calvin Harris </option>
+  			<option value = "Daya"> Daya </option>
+  			<option value = "Kenny Chesney"> Kenny Chesney </option>
+  			<option value = "Miranda Lambert"> Miranda Lambert </option>
+  		</select>
+  		<br>
+
+  		<label for ="Album"> Album: </label><br>
+  		<select name="Album" id ="Album">
+  			<option disabled selected value> option </option>
+  			<option value = "Drake"> Drake </option>
+  			<option value = "Calvin Harris"> Calvin Harris </option>
+  			<option value = "Daya"> Daya </option>
+  			<option value = "Kenny Chesney"> Kenny Chesney </option>
+  			<option value = "Miranda Lambert"> Miranda Lambert </option><br>
+  		</select>
+  		<br>
+
+		<label for ="Genre:"> Genre: </label><br>
+		
+		
+		<label class="gLabel">
+			<input type="checkbox" name="Rock"  id ="Rock" >Rock 	
+		</label>
+
+		<label class="gLabel">
+			<input type="checkbox" name="Classical"  id ="Classical" >Classical 	
+		</label>
+
+		<label class="gLabel">
+			<input type="checkbox" name="Pop"  id ="Pop" >Pop 	
+		</label>
+
+		<label class="gLabel">
+			<input type="checkbox" name="Jazz"  id ="Jazz" >Jazz 	
+		</label>
+
+		<label class="gLabel">
+			<input type="checkbox" name="Blues"  id ="Blues" >Blues 	
+		</label>
+
+		<label class="gLabel">
+			<input type="checkbox" name="Hip hop"  id ="Hip hop" >Hip hop 	
+		</label>
+
+
+		<!-- <input type="checkbox" name="Rock"  id ="Rock" >  
+		<label for="Rock"> Rock </label> -->
+
+		<!-- <input type="checkbox" name="Classical" id ="Classical">  
+		<label for="Classical"> Classical </label>
+
+		<input type="checkbox" name="Pop" id ="Pop"> 
+		<label for="Pop"> Pop </label>
+ 
+		<input type="checkbox" name="Jazz" id ="Jazz">  
+		<label for="Jazz"> Jazz </label>
+
+		<input type="checkbox" name="Blues" id ="Blues"> 
+		<label for="Blues"> Blues </label>
+ 
+		<input type="checkbox" name="Hip hop" id ="Hip hop">  
+		<label for="Hip hop"> Hip hop </label> -->
+
+		<br>
+
+		<input type="submit" name="Filter" value="Filter">
+
+
+  	</form>
+  	<form>
+
+
+  	</form>
+
 
 
 </body>
