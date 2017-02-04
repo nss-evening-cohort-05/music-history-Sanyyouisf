@@ -33,11 +33,11 @@ nav li:not(.l1) {
 	display: inline-block;
 	background-color: #4DD7FA;
 	border: solid 2px black;
-	margin-left: 5%;
-	margin-right: 2%;
+	/*margin-left: 5%;
+	margin-right: 2%;*/
 	width: 24%;
 	padding: 15px;
-	float: left;
+	/*float: left;*/
 }
 
 select {
@@ -53,7 +53,7 @@ input[type="range"] {
 /*target the checkbox and its labels */ 
 input[type="checkbox"], label.gLabel {
 	display: inline-block;
-	width: 35%;
+	width: 40%;
 }
 
 /*target the button*/
@@ -69,11 +69,10 @@ input[type="submit"] {
 #form2 {
 
 	display: inline-block;
-	width: 60%;
+	width: 80%;
 	background-color: #FEFAC0;
 	border: solid 2px black;
-	margin-right: 5%;
-	margin-left: 1%;
+	margin-left: 3%;
 	float: right;
 	height: 80%;
 }
@@ -94,7 +93,11 @@ input[type="submit"] {
 	padding-left: 15px;
 }
 
-
+.container {
+	display: flex;
+	flex-direction: row;
+	margin: 2% 5%;
+}
 
 
 
