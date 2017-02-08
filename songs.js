@@ -36,17 +36,22 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 
 var i
 for( i=0 ; i<songs.length ; i++) {
-	var Songs = songs[i].innerHtml;
+	var Songs = songs[i].innerHTML;
 	songs[i] = songs[i].replace(" >" , " - ");
 	songs[i] = songs[i].replace("*" , '');
 	songs[i] = songs[i].replace("@" , '');
 	songs[i] = songs[i].replace(" & " ,'');
 	songs[i] = songs[i].replace("!" , '');
 	songs[i] = songs[i].replace("(" , '');
+	// document.getElementById("mySong").innerHtml += '<li>' + songs[i].innerHtml + '</li>' ;
+	document.getElementById("mySong1").innerHTML += '<li>' + songs[i] + '</li>' ;
+	document.getElementById("mySong2").innerHTML += '<li>' + songs[i] + '</li>' ;
+	document.getElementById("mySong3").innerHTML += '<li>' + songs[i] + '</li>' ;
+	document.getElementById("mySong4").innerHTML += '<li>' + songs[i] + '</li>' ;
 }
 
-	console.log (songs);
-
+	// console.log (songs);
+	
 
 
 
