@@ -38,7 +38,7 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 //Each student must add one song to the end of the array.
 songs[songs.length] = "Deja Vu by Mike Posner on the album 31 Minutes to Takeoff";
 
-var songsArray = ["mySong1","mySong2","mySong3","mySong4"];
+// var songsArray = ["mySong1","mySong2","mySong3","mySong4"];
 
 
 //Loop over the array and remove any words or characters that obviously don't belong.
@@ -52,6 +52,7 @@ for( var i=0  ; i<songs.length  ; i++  ) {
 	songs[i] = songs[i].replace("!" , '');
 	songs[i] = songs[i].replace("(" , '');
     
+    //Must add each string to the DOM in index.html in the main content area.
 	document.getElementById("mySong" + i ).innerHTML = '<li>' + songs[i] + '</li>' ;
 	
 }
