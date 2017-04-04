@@ -2,24 +2,40 @@
 	"songs": [
 				{
 
-					"album": "take care",
-    				"Artist":  "drake",
-    				"Song name":  "Over My Dead Body",
+					"album": "Appetite for Destruction ",
+    				"Artist":  "Guns Roses",
+    				"SongName":  "Welcome to the Jungle"
 				},
 				{
 					"album": "take care",
     				"Artist":  "drake",
-    				"Song name":  "Over My Dead Body",
+    				"SongName":  "Over My Dead Body"
 				},
 				{
 					"album": "31 Minutes to Takeoff",
     				"Artist":  "Mike Posner",
-    				"Song name":  "Deja Vu",
+    				"SongName":  "Deja Vu"
 				},
 				{
 					"album": "This is Acting",
     				"Artist":  "Sia",
-    				"Song name":  "Cheap Thrills",
+    				"SongName":  "Cheap Thrills"
+				},
+				{
+
+					"album": "Eliminator",
+    				"Artist":  "ZZTop",
+    				"SongName":  "Legs"
+				},
+				{
+					"album": "Breakfast in America",
+    				"Artist":  "Supertramp",
+    				"SongName":  "The Logical Song"
+				},
+				{
+					"album": "The Wall",
+    				"Artist":  "Pink Floyd",
+    				"SongName":  "Another Brick in the Wall"
 				}
 	]
 }

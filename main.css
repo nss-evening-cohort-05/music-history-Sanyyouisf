@@ -14,7 +14,8 @@ nav ul li {
 
 li a {
 	color: blue;
-	margin-left: 5px;	
+	margin-left: 5px;
+
 }
 
 /*target the first child in the li*/
@@ -85,6 +86,7 @@ input[type="submit"] {
 #form2 ul li {
 	list-style: none;
 	display: inline-block;
+	padding-right: 5px;
 }
 
 /*target all the li except the li1*/
