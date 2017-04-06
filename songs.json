@@ -1,7 +1,7 @@
 {
-	"songs": [
+	"songs": 
+	[
 				{
-
 					"album": "Appetite for Destruction ",
     				"Artist":  "Guns Roses",
     				"SongName":  "Welcome to the Jungle"
@@ -20,22 +20,6 @@
 					"album": "This is Acting",
     				"Artist":  "Sia",
     				"SongName":  "Cheap Thrills"
-				},
-				{
-
-					"album": "Eliminator",
-    				"Artist":  "ZZTop",
-    				"SongName":  "Legs"
-				},
-				{
-					"album": "Breakfast in America",
-    				"Artist":  "Supertramp",
-    				"SongName":  "The Logical Song"
-				},
-				{
-					"album": "The Wall",
-    				"Artist":  "Pink Floyd",
-    				"SongName":  "Another Brick in the Wall"
 				}
 	]
 }
