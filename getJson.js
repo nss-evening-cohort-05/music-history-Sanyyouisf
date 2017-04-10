@@ -6,7 +6,6 @@ var songContainer = document.getElementById("songContainer");
 var song2Container = document.getElementById("song2Container");
 var button = document.getElementById("button");
 var moreBtn = ' <input type="button" id ="button" class="morebtn" value="More >"> ' ;
-// var moreBtn = document.getElementsByClassName("morebtn");
 
 
 //Loop over results and inject into Music History list view.
@@ -22,8 +21,6 @@ function makeDOM(xhrData){
 		+'<li>' + mySong.SongName + '</li>'
 		+ deletbtn ;	
 	}
-	//Add a button at the bottom of your music list and label it More >
-	// var button = ' <input type="button" id ="button" class="morebtn" value="More >"> ' ;
 	songContainer.innerHTML += moreBtn;
 }
 
@@ -38,45 +35,15 @@ xhr.addEventListener("load",excuteWhenLoad);
 xhr.open("GET","songs.json");
 xhr.send();
 
-//Add delete button to each row and, when it is clicked, delete the entire row in the DOM.
-// function deletSong(event){
-// 	if (event.target.className==="btn"){
-// 		var parent = event.target.parentNode;
-// 		console.log("parent",parent)
-// 		for (var i = 0 ; i < parent.children.length ; i++){
-			
-// 			parent.children[i].innerHTML= "";
-// 		}
-// 	}
-// }
 
-// event listener for the delete button
-// document.body.addEventListener("click" ,deletSong);
-document.body.addEventListener("click" ,function(event){
-	if (event.target.className==="btn"){
+
+function deletSong(event){
+	if (event.target.className==='btn'){
 		var parent = event.target.parentNode;
-		console.log("parent",parent)
 		for (var i = 0 ; i < parent.children.length ; i++){	
 			parent.children[i].innerHTML= "";
 		}
 	}
-});
-
-
-function deletSong(event){
-	console.log("event.target.className",event.target.className)
-	if (event.target.className==='btn'){
-
-		var parent = event.target.parentNode;
-		console.log("parent",parent)
-		for (var i = 0 ; i < parent.children.length ; i++){	
-			parent.children[i].innerHTML= "";
-		}
-	// console.log('eventworks',event);
-	// console.log('uniqId',event.target.parentNode.id);
-	// console.log('text?',event.target.previousSibling);
-	// event.target.previousSibling.remove();
-}
 }
 
 document.body.addEventListener("click" ,deletSong);
@@ -109,30 +76,19 @@ function loadSongs2(){
 
 //delete the More button at the end of the first song part 
 function deleteMoreBtn(event){
-
 	if (event.target.className ==="morebtn"){
-		console.log ("you clicked on more button");
-		// var parent = event.target.parentNode;
-		// for (var i = 0 ; i < parent.children.length ; i++){
-		// 	parent.children[i].innerHTML= "";
-		// }
-		console.log("event.target",event.target);
 		event.target.remove();
-		// console.log("you move the more button to the end");
 	}
 };
 
 // Event Listener gor the More button 
 document.body.addEventListener("click",function(){
-	// console.log ("you clicked on more button");
 	if (event.target.className ==="morebtn"){
 	xhr2.addEventListener("load",loadSongs2);
 	xhr2.open("GET","songs2.json");
 	xhr2.send();
 	deleteMoreBtn(event);
-}
-	// moreBtn.parentNode.remove();
-	// console.log("event.target",event.target)
+	}
 });
 
 
