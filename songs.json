@@ -1,6 +1,5 @@
 {
-	"songs": 
-	[
+	"songs": [
 				{
 					"album": "Appetite for Destruction ",
     				"Artist":  "Guns Roses",
@@ -21,5 +20,5 @@
     				"Artist":  "Sia",
     				"SongName":  "Cheap Thrills"
 				}
-	]
+			]
 }
