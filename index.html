@@ -1,147 +1,132 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <title>Music History</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
-	<nav>
-	  	<ul class="nav">
-	  		<li class="l1">
-	  			<a href="#">View Music </a>
-	  		</li>
-	  		<li class="l2">
-	  			<a href="#"> Add Music </a>
-	  		</li>
-	  		<li class="l3">
-	  			<a href="#"> profile </a>
-	  		</li>
-	  	</ul>
-  	</nav>
-
+    <nav>
+        <ul class="nav">
+            <li class="l1">
+                <a href="#">View Music </a>
+            </li>
+            <li class="l2">
+                <a href="#"> Add Music </a>
+            </li>
+            <li class="l3">
+                <a href="#"> profile </a>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
-    	<form id="form1">
-    		<label for = "Song length" > Song length: </label><br>
-    		<input type="range" id ="Song length" name="Song length"><br>
-
-    		<label for ="artistOptions"> Artist: </label><br>
-    		<select name="artist" id ="artistOptions">
-    			<option disabled selected value> option </option>
-    			<option value = "Drake"> Drake </option>
-    			<option value = "Calvin Harris"> Calvin Harris </option>
-    			<option value = "Daya"> Daya </option>
-    			<option value = "Kenny Chesney"> Kenny Chesney </option>
-    			<option value = "Miranda Lambert"> Miranda Lambert </option>
-    		</select>
-    		<br>
-
-    		<label for ="Album"> Album: </label><br>
-    		<select name="Album" id ="Album">
-    			<option disabled selected value> option </option>
-    			<option value = "Album1"> Album1 </option>
-    			<option value = "Album2"> Album2 </option>
-    			<option value = "Album3"> Album3 </option>
-    			<option value = "Album4"> Album4 </option>
-    			<option value = "Album5"> Album5 </option><br>
-    		</select>
-    		<br>
-
-  		<label for ="Genre:"> Genre: </label><br>
-  		
-  		
-  		<label class="gLabel">
-  			<input type="checkbox" name="Rock"  id ="Rock" >Rock 	
-  		</label>
-
-  		<label class="gLabel">
-  			<input type="checkbox" name="Classical"  id ="Classical" >Classical 	
-  		</label>
-
-  		<label class="gLabel">
-  			<input type="checkbox" name="Pop"  id ="Pop" >Pop 	
-  		</label>
-
-  		<label class="gLabel">
-  			<input type="checkbox" name="Jazz"  id ="Jazz" >Jazz 	
-  		</label>
-
-  		<label class="gLabel">
-  			<input type="checkbox" name="Blues"  id ="Blues" >Blues 	
-  		</label>
-
-  		<label class="gLabel">
-  			<input type="checkbox" name="Hip hop"  id ="Hip hop" >Hip hop 	
-  		</label>
-
-  		<br>
-  		<br>
-
-  		<input type="submit" name="Filter" value="Filter">
-
-
-    	</form>
-    	<form id="form2">
-        <div id="songContainer">
-        		<h2>Song Name</h2>
-        		<ul id = "mySong0">
-        			<li >Artist name</li>
-        			<li >Album name</li>
-        			<li >Genre</li>
-        		</ul>
-
-        		<h2>Song Name</h2>
-        		<ul id = "mySong1">
-        			<li >Artist name</li>
-        			<li >Album name</li>
-        			<li >Genre</li>
-        		</ul>
-
-        		<h2>Song Name</h2>
-        		<ul id = "mySong2">
-        			<li >Artist name</li>
-        			<li >Album name</li>
-        			<li >Genre</li>
-        		</ul>
-
-        		<h2>Song Name</h2>
-        		<ul id = "mySong3">
-        			<li >Artist name</li>
-        			<li >Album name</li>
-        			<li >Genre</li>
-        		</ul>
-          </div>
-
-        <div id="song2Container">
-            <h2>Song Name</h2>
-            <ul id = "2mySong0">
-              <li >Artist name</li>
-              <li >Album name</li>
-              <li >Genre</li>
-            </ul>
-
-            <h2>Song Name</h2>
-            <ul id = "2mySong1">
-              <li >Artist name</li>
-              <li >Album name</li>
-              <li >Genre</li>
-            </ul>
-
-            <h2>Song Name</h2>
-            <ul id = "2mySong2">
-              <li >Artist name</li>
-              <li >Album name</li>
-              <li >Genre</li>
-            </ul>
-        </div>
-        <!-- {Song name} by {Artist} on the album {Album} -->
-    	</form>
+        <form id="form1">
+            <label for="Song length"> Song length: </label>
+            <br>
+            <input type="range" id="Song length" name="Song length">
+            <br>
+            <label for="artistOptions"> Artist: </label>
+            <br>
+            <select name="artist" id="artistOptions">
+                <option disabled selected value> option </option>
+                <option value="Drake"> Drake </option>
+                <option value="Calvin Harris"> Calvin Harris </option>
+                <option value="Daya"> Daya </option>
+                <option value="Kenny Chesney"> Kenny Chesney </option>
+                <option value="Miranda Lambert"> Miranda Lambert </option>
+            </select>
+            <br>
+            <label for="Album"> Album: </label>
+            <br>
+            <select name="Album" id="Album">
+                <option disabled selected value> option </option>
+                <option value="Album1"> Album1 </option>
+                <option value="Album2"> Album2 </option>
+                <option value="Album3"> Album3 </option>
+                <option value="Album4"> Album4 </option>
+                <option value="Album5"> Album5 </option>
+                <br>
+            </select>
+            <br>
+            <label for="Genre:"> Genre: </label>
+            <br>
+            <label class="gLabel">
+                <input type="checkbox" name="Rock" id="Rock">Rock
+            </label>
+            <label class="gLabel">
+                <input type="checkbox" name="Classical" id="Classical">Classical
+            </label>
+            <label class="gLabel">
+                <input type="checkbox" name="Pop" id="Pop">Pop
+            </label>
+            <label class="gLabel">
+                <input type="checkbox" name="Jazz" id="Jazz">Jazz
+            </label>
+            <label class="gLabel">
+                <input type="checkbox" name="Blues" id="Blues">Blues
+            </label>
+            <label class="gLabel">
+                <input type="checkbox" name="Hip hop" id="Hip hop">Hip hop
+            </label>
+            <br>
+            <br>
+            <input type="submit" name="Filter" value="Filter">
+        </form>
+        <form id="form2">
+            <div id="songContainer">
+                <h2>Song Name</h2>
+                <ul id="mySong0">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="mySong1">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="mySong2">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="mySong3">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+            </div>
+            <div id="song2Container">
+                <h2>Song Name</h2>
+                <ul id="2mySong0">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="2mySong1">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="2mySong2">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+            </div>
+            <!-- {Song name} by {Artist} on the album {Album} -->
+        </form>
     </div>
-
-
-<!-- <script type="text/javascript" src="songs.js"></script> -->
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="getjson.js"></script>
+    <!-- <script type="text/javascript" src="songs.js"></script> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="getjson.js"></script>
 </body>
+
 </html>
