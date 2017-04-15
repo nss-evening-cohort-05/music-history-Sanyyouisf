@@ -1,20 +1,15 @@
 {
-	"songs2": 
-	[
-				{
-					"album": "Eliminator",
-    				"Artist":  "ZZTop",
-    				"SongName":  "Legs"
-				},
-				{
-					"album": "Breakfast in America",
-    				"Artist":  "Supertramp",
-    				"SongName":  "The Logical Song"
-				},
-				{
-					"album": "The Wall",
-    				"Artist":  "Pink Floyd",
-    				"SongName":  "Another Brick in the Wall"
-				}
-	]
+    "songs2": [{
+        "album": "Eliminator",
+        "Artist": "ZZTop",
+        "SongName": "Legs"
+    }, {
+        "album": "Breakfast in America",
+        "Artist": "Supertramp",
+        "SongName": "The Logical Song"
+    }, {
+        "album": "The Wall",
+        "Artist": "Pink Floyd",
+        "SongName": "Another Brick in the Wall"
+    }]
 }

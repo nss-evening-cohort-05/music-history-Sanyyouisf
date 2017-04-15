@@ -1,27 +1,27 @@
 /*Albums array */
 var drakeAlbum = [
-"take care" , 
-"Nothing Was The Same",
+    "take care",
+    "Nothing Was The Same",
 
 ]
 
 var drakeAlbum1 = {
-     album: "take care",
-    Artist:  "drake",
-    "Song name":  "Over My Dead Body",
+    album: "take care",
+    Artist: "drake",
+    "Song name": "Over My Dead Body",
 }
 
 var drakeAlbum2 = {
-     album: "Over My Dead Body",
-    Artist:  "drake",
-    "Song name":  "Over My Dead Body",
+    album: "Over My Dead Body",
+    Artist: "drake",
+    "Song name": "Over My Dead Body",
 }
 
 
 var drakeTakeCareSongs = [
-"Over My Dead Body" ,
-"Shot For Me" ,
-"Headlines"
+    "Over My Dead Body",
+    "Shot For Me",
+    "Headlines"
 ]
 
 var songs = [
@@ -44,22 +44,15 @@ songs[songs.length] = "Deja Vu by Mike Posner on the album 31 Minutes to Takeoff
 //Loop over the array and remove any words or characters that obviously don't belong.
 //Students must find and replace the > character in each item with a - character.
 
-for( var i=0  ; i<songs.length  ; i++  ) {
-	songs[i] = songs[i].replace(" >" , " - ");
-	songs[i] = songs[i].replace("*" , '');
-	songs[i] = songs[i].replace("@" , '');
-	songs[i] = songs[i].replace(" & " ,'');
-	songs[i] = songs[i].replace("!" , '');
-	songs[i] = songs[i].replace("(" , '');
-    
+for (var i = 0; i < songs.length; i++) {
+    songs[i] = songs[i].replace(" >", " - ");
+    songs[i] = songs[i].replace("*", '');
+    songs[i] = songs[i].replace("@", '');
+    songs[i] = songs[i].replace(" & ", '');
+    songs[i] = songs[i].replace("!", '');
+    songs[i] = songs[i].replace("(", '');
+
     //Must add each string to the DOM in index.html in the main content area.
-	document.getElementById("mySong" + i ).innerHTML = '<li>' + songs[i] + '</li>' ;
-	
+    document.getElementById("mySong" + i).innerHTML = '<li>' + songs[i] + '</li>';
+
 }
-
-
-
-	
-
-
-

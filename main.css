@@ -1,127 +1,123 @@
-
-
 /*******************************
 ******target the nav elements **/
+
 nav {
-	border: solid 2px black;
-	background-color: #FFB4B0;
-	margin: 3% 5% 2% 5%;
+    border: solid 2px black;
+    background-color: #FFB4B0;
+    margin: 3% 5% 2% 5%;
 }
 
 nav ul li {
-	display: inline-block;
+    display: inline-block;
 }
 
 li a {
-	color: blue;
-	margin-left: 5px;
-
+    color: blue;
+    margin-left: 5px;
 }
+
 
 /*target the first child in the li*/
+
 li:first-child a {
-	text-decoration: none;
-	color: black;	
+    text-decoration: none;
+    color: black;
 }
+
+
 /*target all the li except the l1*/
+
 nav li:not(.l1) {
-	border-left: solid 2px black;
+    border-left: solid 2px black;
 }
+
 
 /*******************************
 ******target the first form **/
+
 #form1 {
-	display: inline-block;
-	background-color: #4DD7FA;
-	border: solid 2px black;
-	/*margin-left: 5%;
+    display: inline-block;
+    background-color: #4DD7FA;
+    border: solid 2px black;
+    /*margin-left: 5%;
 	margin-right: 2%;*/
-	width: 24%;
-	padding: 15px;
-	/*float: left;*/
+    width: 24%;
+    padding: 15px;
+    /*float: left;*/
 }
 
 select {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 
 /*target the range element*/
 
 input[type="range"] {
-	margin-bottom: 20px;	
+    margin-bottom: 20px;
 }
 
-/*target the checkbox and its labels */ 
-input[type="checkbox"], label.gLabel {
-	display: inline-block;
-	width: 40%;
+
+/*target the checkbox and its labels */
+
+input[type="checkbox"],
+label.gLabel {
+    display: inline-block;
+    width: 40%;
 }
+
 
 /*target the button*/
+
 input[type="submit"] {
-	width: 120px;
-	display: block;
-	margin: auto;
+    width: 120px;
+    display: block;
+    margin: auto;
 }
 
 
 /*******************************
 ******target the second form **/
-#form2 {
 
-	display: inline-block;
-	width: 80%;
-	background-color: #FEFAC0;
-	border: solid 2px black;
-	margin-left: 3%;
-	float: right;
-	height: 80%;
+#form2 {
+    display: inline-block;
+    width: 80%;
+    background-color: #FEFAC0;
+    border: solid 2px black;
+    margin-left: 3%;
+    float: right;
+    height: 80%;
 }
 
 #form2 h2 {
-	color: #785616;
-	margin-left: 30px;
+    color: #785616;
+    margin-left: 30px;
 }
 
 #form2 ul li {
-	list-style: none;
-	display: inline-block;
-	padding-right: 5px;
+    list-style: none;
+    display: inline-block;
+    padding-right: 5px;
 }
 
+
 /*target all the li except the li1*/
+
 #form2 li:not(.li1) {
-	border-left: solid 2px black;
-	padding-left: 15px;
+    border-left: solid 2px black;
+    padding-left: 15px;
 }
 
 .container {
-	display: flex;
-	flex-direction: row;
-	margin: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5%;
 }
 
 .morebtn {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
