@@ -45,7 +45,9 @@ $(document).ready(function(){
 
 //Event Listener for the delet button
 	$(document).ready(function() {
-		$(".btn").on("click" , function(){
+		
+		$(".btn").on("click" , function(event){
+			console.log("the event is :",event)
 			$(this).siblings().remove();
 			console.log ("line is remover");
 		});
