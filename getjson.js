@@ -4,18 +4,6 @@ $(document).ready(function() {
     var moreBtn = '<input type="button" id ="button" class="morebtn" value="More >" >';
     var deletbtn = '<input type="button" class="btn"  value ="delete"> </div>';
 
-    //to let the function work use this line 
-    //$.each(songsData.songs   to loop through the songs inside the object 
-    // function makeDOM(songsData){
-    // 	$.each(songsData.songs, function(index, value) {
-    // 	    $('#songContainer').append(`<p> ${value.album} </p>`);
-    // 	    $("#songContainer").append(`<p>  ${value.Artist}</p> `);
-    // 	    $("#songContainer").append(`<p> ${value.SongName} </p>`);
-    // 	    $("#songContainer").append(`<input type="button" class="btn" id ="button-${index}" value ="delete">`);
-    // 	});
-    // 	$("#songContainer").append(' <input type="button" id ="button" class="morebtn" value="More >"> ');
-    // };
-
 
     //make DOM for the first jason
     function makeDOM(data) {
