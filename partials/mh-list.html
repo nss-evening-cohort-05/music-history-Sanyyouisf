@@ -51,52 +51,57 @@
         <br>
         <input type="submit" name="Filter" value="Filter">
     </form>
-    <form id="form2">
-        <div id="songContainer">
-            <h2>Song Name</h2>
-            <ul id="mySong0">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-            <h2>Song Name</h2>
-            <ul id="mySong1">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-            <h2>Song Name</h2>
-            <ul id="mySong2">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-            <h2>Song Name</h2>
-            <ul id="mySong3">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-        </div>
-        <div id="song2Container">
-            <h2>Song Name</h2>
-            <ul id="2mySong0">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-            <h2>Song Name</h2>
-            <ul id="2mySong1">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-            <h2>Song Name</h2>
-            <ul id="2mySong2">
-                <li>Artist name</li>
-                <li>Album name</li>
-                <li>Genre</li>
-            </ul>
-        </div>
-    </form>
+    <div ng-repeate=" song in songs">
+        <form id="form2">
+            <div id="songContainer">
+                <h2>{{song.id}}</h2>
+                <ul id="mySong0">
+                    <!-- <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li> -->
+                    <li>{{song.Artist}}</li>
+                    <li>{{song.album}}</li>
+                    <li>{{song.Genre}}</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="mySong1">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="mySong2">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="mySong3">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+            </div>
+            <div id="song2Container">
+                <h2>Song Name</h2>
+                <ul id="2mySong0">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="2mySong1">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+                <h2>Song Name</h2>
+                <ul id="2mySong2">
+                    <li>Artist name</li>
+                    <li>Album name</li>
+                    <li>Genre</li>
+                </ul>
+            </div>
+        </form>
+    </div>
 </div>
