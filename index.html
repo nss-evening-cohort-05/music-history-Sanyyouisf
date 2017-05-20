@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body>
-    <nav>
+<body ng-app="musicHistoryApp">
+    <div ng-include="'/partials/mh-navbar.html'"></div>
+    <!-- <nav>
         <ul class="nav">
             <li class="l1">
                 <a href="#">View Music </a>
@@ -20,8 +21,8 @@
                 <a href="#"> profile </a>
             </li>
         </ul>
-    </nav>
-    <div class="container">
+    </nav> -->
+   <!--  <div class="container">
         <form id="form1">
             <label for="Song length"> Song length: </label>
             <br>
@@ -121,13 +122,26 @@
                     <li>Genre</li>
                 </ul>
             </div>
-            <!-- {Song name} by {Artist} on the album {Album} -->
         </form>
     </div>
+ -->
+    <div class="col-xs-8 col-xs-offset-2" ng-view></div>
+
+    <!-- //THIRD PARTY JAVASCRIPT FILES -->
+    <script src="./lib/bower_components/jquery/dist/jquery.js"></script>
     <script src="./lib/bower_components/jquery/dist/jquery.js"></script>
     <script src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./lib/bower_components/angular/angular.min.js"></script>
     <script src="./lib/bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- //PERSONAL JAVASCRIPT FILES -->
+    <script src="./javascripts/app.js"></script>
+    <script src="./javascripts/appConfig.js"></script>
+
+    <script src="./javascripts/controllers/mhAddSongCtrl.js"></script>
+    <script src="./javascripts/controllers/mhListCtrl.js"></script>
+    <script src="./javascripts/controllers/mhViewProfile.js"></script>
+    
     <script src="./javascripts/main.js"></script>
 </body>
 
