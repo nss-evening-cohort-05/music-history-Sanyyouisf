@@ -1,0 +1,26 @@
+<h1>add new song</h1>
+<form>
+    <div class="form-group">
+        <label>Song Name</label>
+        <input type="text" class="form-control" placeholder="Song Name" ng-model="newSong.songName" />
+    </div>
+    <div class="form-group">
+        <label>Artist Name</label>
+        <input type="text" class="form-control" placeholder="Artist Name" ng-model="newSong.artistName" />
+    </div>
+    <div class="form-group">
+        <label>Album Name</label>
+        <input type="text" class="form-control" placeholder="Album Name" ng-model="newSong.albumName" />
+    </div>
+    <div class="form-group">
+        <label>genre</label>
+        <input type="text" class="form-control" placeholder="genre" ng-model="newSong.genre" />
+    </div>
+    <!-- <p class="input-group ">
+    <input type="date " class="form-control " uib-datepicker-popup ng-model="newTask.dueDate " is-open="isOpened2 " min-date="minDate " max-date="maxDate " datepicker-options="dateOptions " date-disabled="disabled(date, mode) " ng-required="true " close-text="Close " />
+    <span class="input-group-btn ">
+      <button type="button " class="btn btn-default " ng-click="isOpened2=! isOpened2 "><i class="glyphicon glyphicon-calendar "></i></button>
+    </span>
+  </p> -->
+    <button class="btn btn-primary " ng-click="addNewSong() ">Submit</button>
+</form>

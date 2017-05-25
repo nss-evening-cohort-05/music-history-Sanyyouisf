@@ -1,0 +1,46 @@
+{
+    "songs": {
+        "song0": {
+            "artistName": "Guns Roses",
+            "albumName": "Appetite for Destruction ",
+            "songName": "Welcome to the Jungle",
+            "genre": "Rock"
+        },
+        "song1": {
+            "artistName": "drake",
+            "albumName": "take care",
+            "songName": "Over My Dead Body",
+            "genre": "Jazz"
+        },
+        "song2": {
+            "artistName": "Mike Posner",
+            "albumName": "31 Minutes to Takeoff",
+            "songName": "Deja Vu",
+            "genre": "Pop"
+        },
+        "song3": {
+            "artistName": "Sia",
+            "albumName": "This is Acting",
+            "songName": "Cheap Thrills",
+            "genre": "Hip hop"
+        },
+        "song4": {
+            "artistName": "ZZTop",
+            "albumName": "Eliminator",
+            "songName": "Legs",
+            "genre": "Blues"
+        },
+        "song5": {
+            "artistName": "Supertramp",
+            "albumName": "Breakfast in America",
+            "songName": "The Logical Song",
+            "genre": "Classic"
+        },
+        "song6": {
+            "artistName": "Pink Floyd",
+            "albumName": "The Wall",
+            "songName": "Another Brick in the Wall",
+            "genre": "Jazz"
+        }
+    }
+}
