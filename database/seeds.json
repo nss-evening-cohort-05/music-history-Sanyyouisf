@@ -1,39 +1,46 @@
 {
     "songs": {
         "song0": {
-            "album": "Appetite for Destruction ",
-            "Artist": "Guns Roses",
-            "SongName": "Welcome to the Jungle"
+            "artistName": "Guns Roses",
+            "albumName": "Appetite for Destruction ",
+            "songName": "Welcome to the Jungle",
+            "genre": "Rock"
         },
         "song1": {
-            "album": "take care",
-            "Artist": "drake",
-            "SongName": "Over My Dead Body"
+            "artistName": "drake",
+            "albumName": "take care",
+            "songName": "Over My Dead Body",
+            "genre": "Jazz"
         },
         "song2": {
-            "album": "31 Minutes to Takeoff",
-            "Artist": "Mike Posner",
-            "SongName": "Deja Vu"
+            "artistName": "Mike Posner",
+            "albumName": "31 Minutes to Takeoff",
+            "songName": "Deja Vu",
+            "genre": "Pop"
         },
         "song3": {
-            "album": "This is Acting",
-            "Artist": "Sia",
-            "SongName": "Cheap Thrills"
+            "artistName": "Sia",
+            "albumName": "This is Acting",
+            "songName": "Cheap Thrills",
+            "genre": "Hip hop"
         },
         "song4": {
-            "album": "Eliminator",
-            "Artist": "ZZTop",
-            "SongName": "Legs"
+            "artistName": "ZZTop",
+            "albumName": "Eliminator",
+            "songName": "Legs",
+            "genre": "Blues"
         },
         "song5": {
-            "album": "Breakfast in America",
-            "Artist": "Supertramp",
-            "SongName": "The Logical Song"
+            "artistName": "Supertramp",
+            "albumName": "Breakfast in America",
+            "songName": "The Logical Song",
+            "genre": "Classic"
         },
         "song6": {
-            "album": "The Wall",
-            "Artist": "Pink Floyd",
-            "SongName": "Another Brick in the Wall"
+            "artistName": "Pink Floyd",
+            "albumName": "The Wall",
+            "songName": "Another Brick in the Wall",
+            "genre": "Jazz"
         }
     }
 }

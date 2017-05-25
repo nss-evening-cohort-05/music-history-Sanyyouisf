@@ -23,22 +23,25 @@ nav li:not(.l1) {
 
 /*******************************
 ******target the first form **/
-#form1 {
+.container1 {
   display: inline-block;
   background-color: #4DD7FA;
   border: solid 2px black;
-  /*margin-left: 5%;
-	margin-right: 2%;*/
-  width: 24%;
+  margin-left: 5%;
+  margin-right: 2%;
+  width: 18%;
   padding: 15px;
-  /*float: left;*/ }
+  /*float: left;*/
+  height: 80%; }
 
 select {
   margin-bottom: 20px; }
 
 /*target the range element*/
 input[type="range"] {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  /*      width: 40%;
+*/ }
 
 /*target the checkbox and its labels */
 input[type="checkbox"],
@@ -50,11 +53,12 @@ label.gLabel {
 input[type="submit"] {
   width: 120px;
   display: block;
-  margin: auto; }
+  margin: auto;
+  /*width: 40%;*/ }
 
 /*******************************
 ******target the second form **/
-#form2 {
+.container2 {
   display: inline-block;
   width: 80%;
   background-color: #FEFAC0;
@@ -63,17 +67,17 @@ input[type="submit"] {
   float: right;
   height: 80%; }
 
-#form2 h2 {
+.container2 h3 {
   color: #785616;
   margin-left: 30px; }
 
-#form2 ul li {
+.container2 ul li {
   list-style: none;
   display: inline-block;
   padding-right: 5px; }
 
 /*target all the li except the li1*/
-#form2 li:not(.li1) {
+.container2 li:not(.li1) {
   border-left: solid 2px black;
   padding-left: 15px; }
 
