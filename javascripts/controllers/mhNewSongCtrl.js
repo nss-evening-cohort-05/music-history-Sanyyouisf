@@ -1,11 +1,11 @@
-app.controller("mhNewSongCtrl",function($http, $q,$scope,$location,songFactory, $rootScope){
+app.controller("mhNewSongCtrl",function($http, $q,$scope,$location,SongFactory, $rootScope){
 	console.log(" inside mhNewSongCtrl");
 	 // $scope.newSong = {};
 
 	$scope.addNewSong = () => {
 		// $scope.newSong.uid=$rootScope.user.uid;
 		// console.log("$scope.newSong.uid inside mhNewSongCtrl",$scope.newSong.uid);
-		songFactory.postNewSong($scope.newSong)
+		SongFactory.postNewSong($scope.newSong)
 		.then ((response)=>{
 			$scope.newSong = {};
 			console.log("response in addNewSong in mhNewSongCtrl",response);

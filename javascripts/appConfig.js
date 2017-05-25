@@ -13,6 +13,14 @@ app.config(function($routeProvider){
 		templateUrl:'/partials/mh-profile.html',
 		controller:"mhViewProfile"
 	})
+	.when('/songs/edit/:id',{
+        templateUrl:'partials/mh-newSong.html',
+        controller:'mhEditCtrl'
+    }) 
+    .when('/songs/view/:id',{
+        templateUrl:'partials/mh-view.html',
+        controller:'mhViewCtrl',
+    })    
 	.when('/songs/new',{
 		templateUrl:'/partials/mh-newSong.html',
 		controller:"mhNewSongCtrl"

@@ -1,4 +1,4 @@
-app.factory("songFactory", function($q, $http, FIREBASE_CONFIG) {
+app.factory("SongFactory", function($q, $http, FIREBASE_CONFIG) {
     console.log("inside songFactory");
 
     let getSongList = () => {
@@ -76,5 +76,25 @@ app.factory("songFactory", function($q, $http, FIREBASE_CONFIG) {
     };
 
 
-    return { getSongList: getSongList, getSingleSong: getSingleSong, deletz: deletz ,postNewSong:postNewSong};
+    let editSong = (song) => {
+        return $q((resolve,reject)=>{
+            $http.put(`${FIREBASE_CONFIG.databaseURL}/songs/${song.id}.json`, JSON.stringify({
+                    artistName: song.artistName,
+                    albumName: song.albumName,
+                    songName: song.songName,
+                    genre:song.genre
+                })).then((resultz) => {
+                    resolve(resultz);
+                    console.log("resultz iside editSong in factory",resultz);
+                })
+                .catch((error) => {
+                    reject(error);
+                    console.log("error in editSong in factory ", error);
+
+                });
+        });
+    };
+
+
+    return { getSongList: getSongList, getSingleSong: getSingleSong, deletz: deletz ,postNewSong:postNewSong ,editSong:editSong};
 });

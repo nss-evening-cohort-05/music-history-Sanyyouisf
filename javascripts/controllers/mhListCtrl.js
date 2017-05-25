@@ -1,9 +1,9 @@
-app.controller("mhListCtrl",function($scope,songFactory){
+app.controller("mhListCtrl",function($scope,SongFactory){
 	console.log("inside mhListCtrl");
 	$scope.songs=[];
 
 	let getSongs = () => {
-		songFactory.getSongList()
+		SongFactory.getSongList()
 		.then((songz) => {
 			$scope.songs = songz;
 			console.log("songs in getSongs",$scope.songs);
@@ -16,7 +16,7 @@ app.controller("mhListCtrl",function($scope,songFactory){
 	getSongs();
 
 	$scope.deleteSong = (id) => {
-		songFactory.deletz(id)
+		SongFactory.deletz(id)
 		.then(()=>{
 			getSongs();
 			// console.log("result",result);
